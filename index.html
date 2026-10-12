@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Avanti - Super Sale: itens selecionados com até 50% OFF.">
+  <title>Avanti | eCommerce</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="topbar">
+      <p class="topbar__text">
+        Ganhe <span class="topbar__highlight">R$10,00</span> de desconto no seu primeiro pedido. Utilize o cupom <span class="topbar__coupon">DESCONTO10</span>
+      </p>
+    </div>
+
+    <div class="header__main">
+      <div class="header__container">
+        <div class="header__row">
+          <button class="header__burger" type="button" aria-label="Abrir menu" aria-controls="mobile-menu" aria-expanded="false" data-menu-open>
+            <span></span><span></span><span></span>
+          </button>
+
+          <a href="#" class="header__logo" aria-label="Avanti - página inicial">
+            <img src="assets/icons/logo.svg" alt="Avanti" width="153" height="27">
+          </a>
+
+          <div class="search">
+            <form class="search__form" role="search" data-search-form>
+              <label for="search-input" class="visually-hidden">Buscar produtos</label>
+              <input type="search" id="search-input" class="search__input" placeholder="Digite aqui o que você procura" autocomplete="off" data-search-input>
+              <button type="submit" class="search__button" aria-label="Buscar" data-search-button>
+                <img src="assets/icons/search.svg" alt="" width="19" height="19">
+              </button>
+            </form>
+            <p class="search__result" aria-live="polite" data-search-result hidden></p>
+          </div>
+
+          <div class="header__actions">
+            <a href="#" class="header__account">
+              <img src="assets/icons/user.svg" alt="" width="21" height="24">
+              <span>Olá,<br>Nome cliente!</span>
+            </a>
+            <a href="#" class="header__cart" aria-label="Carrinho com 2 itens">
+              <img src="assets/icons/cart.svg" alt="" width="25" height="24">
+              <span class="header__cart-count">2</span>
+            </a>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Departamentos">
+          <ul class="nav__list">
+            <li class="nav__item nav__item--all">
+              <a href="#" class="nav__link nav__link--all">
+                <span class="nav__burger" aria-hidden="true"><span></span><span></span><span></span></span>
+                Todas as Categorias
+              </a>
+
+              <div class="dropdown dropdown--all">
+                <ul class="dropdown__departments">
+                  <li><a href="#" class="is-active">Departamento <svg width="5" height="8" viewBox="0 0 5 8" aria-hidden="true"><path d="M4.46 4.54 1.28 7.78a.75.75 0 0 1-1.06 0 .77.77 0 0 1 0-1.08L2.87 4 .22 1.3a.77.77 0 0 1 0-1.08.75.75 0 0 1 1.06 0l3.18 3.24a.77.77 0 0 1 0 1.08Z" fill="currentColor"/></svg></a></li>
+                  <li><a href="#">Departamento <svg width="5" height="8" viewBox="0 0 5 8" aria-hidden="true"><path d="M4.46 4.54 1.28 7.78a.75.75 0 0 1-1.06 0 .77.77 0 0 1 0-1.08L2.87 4 .22 1.3a.77.77 0 0 1 0-1.08.75.75 0 0 1 1.06 0l3.18 3.24a.77.77 0 0 1 0 1.08Z" fill="currentColor"/></svg></a></li>
+                  <li><a href="#">Departamento <svg width="5" height="8" viewBox="0 0 5 8" aria-hidden="true"><path d="M4.46 4.54 1.28 7.78a.75.75 0 0 1-1.06 0 .77.77 0 0 1 0-1.08L2.87 4 .22 1.3a.77.77 0 0 1 0-1.08.75.75 0 0 1 1.06 0l3.18 3.24a.77.77 0 0 1 0 1.08Z" fill="currentColor"/></svg></a></li>
+                  <li><a href="#">Departamento <svg width="5" height="8" viewBox="0 0 5 8" aria-hidden="true"><path d="M4.46 4.54 1.28 7.78a.75.75 0 0 1-1.06 0 .77.77 0 0 1 0-1.08L2.87 4 .22 1.3a.77.77 0 0 1 0-1.08.75.75 0 0 1 1.06 0l3.18 3.24a.77.77 0 0 1 0 1.08Z" fill="currentColor"/></svg></a></li>
+                  <li><a href="#">Departamento <svg width="5" height="8" viewBox="0 0 5 8" aria-hidden="true"><path d="M4.46 4.54 1.28 7.78a.75.75 0 0 1-1.06 0 .77.77 0 0 1 0-1.08L2.87 4 .22 1.3a.77.77 0 0 1 0-1.08.75.75 0 0 1 1.06 0l3.18 3.24a.77.77 0 0 1 0 1.08Z" fill="currentColor"/></svg></a></li>
+                  <li><a href="#">Departamento <svg width="5" height="8" viewBox="0 0 5 8" aria-hidden="true"><path d="M4.46 4.54 1.28 7.78a.75.75 0 0 1-1.06 0 .77.77 0 0 1 0-1.08L2.87 4 .22 1.3a.77.77 0 0 1 0-1.08.75.75 0 0 1 1.06 0l3.18 3.24a.77.77 0 0 1 0 1.08Z" fill="currentColor"/></svg></a></li>
+                  <li><a href="#">Departamento <svg width="5" height="8" viewBox="0 0 5 8" aria-hidden="true"><path d="M4.46 4.54 1.28 7.78a.75.75 0 0 1-1.06 0 .77.77 0 0 1 0-1.08L2.87 4 .22 1.3a.77.77 0 0 1 0-1.08.75.75 0 0 1 1.06 0l3.18 3.24a.77.77 0 0 1 0 1.08Z" fill="currentColor"/></svg></a></li>
+                  <li><a href="#">Departamento <svg width="5" height="8" viewBox="0 0 5 8" aria-hidden="true"><path d="M4.46 4.54 1.28 7.78a.75.75 0 0 1-1.06 0 .77.77 0 0 1 0-1.08L2.87 4 .22 1.3a.77.77 0 0 1 0-1.08.75.75 0 0 1 1.06 0l3.18 3.24a.77.77 0 0 1 0 1.08Z" fill="currentColor"/></svg></a></li>
+                  <li><a href="#">Departamento <svg width="5" height="8" viewBox="0 0 5 8" aria-hidden="true"><path d="M4.46 4.54 1.28 7.78a.75.75 0 0 1-1.06 0 .77.77 0 0 1 0-1.08L2.87 4 .22 1.3a.77.77 0 0 1 0-1.08.75.75 0 0 1 1.06 0l3.18 3.24a.77.77 0 0 1 0 1.08Z" fill="currentColor"/></svg></a></li>
+                  <li><a href="#">Departamento <svg width="5" height="8" viewBox="0 0 5 8" aria-hidden="true"><path d="M4.46 4.54 1.28 7.78a.75.75 0 0 1-1.06 0 .77.77 0 0 1 0-1.08L2.87 4 .22 1.3a.77.77 0 0 1 0-1.08.75.75 0 0 1 1.06 0l3.18 3.24a.77.77 0 0 1 0 1.08Z" fill="currentColor"/></svg></a></li>
+                </ul>
+                <div class="dropdown__columns" data-category-columns></div>
+                <div class="dropdown__banner">
+                  <p>Confira os<br>Produtos<br><strong>Que acabaram<br>De chegar</strong></p>
+                  <a href="#" class="dropdown__banner-btn">Ver todos</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav__item nav__item--dept" data-dept-template>
+              <a href="#" class="nav__link">Departamento</a>
+              <div class="dropdown dropdown--dept">
+                <div class="dropdown__content">
+                  <div class="dropdown__header">
+                    <h3 class="dropdown__title">Departamento</h3>
+                    <a href="#" class="dropdown__see-all">Ver tudo</a>
+                  </div>
+                  <div class="dropdown__columns" data-category-columns></div>
+                </div>
+                <div class="dropdown__banner">
+                  <p>Confira os<br>Produtos<br><strong>Que acabaram<br>De chegar</strong></p>
+                  <a href="#" class="dropdown__banner-btn">Ver todos</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true" data-mobile-menu>
+    <div class="mobile-menu__overlay" data-menu-close></div>
+    <nav class="mobile-menu__panel" aria-label="Menu">
+      <div class="mobile-menu__head">
+        <img src="assets/icons/logo.svg" alt="Avanti" width="120" height="21">
+        <button type="button" class="mobile-menu__close" aria-label="Fechar menu" data-menu-close>&times;</button>
+      </div>
+      <ul class="mobile-menu__list" data-mobile-menu-list>
+        <li><a href="#" class="mobile-menu__link mobile-menu__link--all">Todas as Categorias</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <section class="hero" aria-label="Super Sale">
+      <div class="hero__inner">
+        <picture class="hero__image">
+          <source media="(max-width: 1023px)" srcset="assets/img/hero-mobile.jpg">
+          <img src="assets/img/hero-desktop.jpg" alt="Roupas dobradas sobre uma cadeira branca" width="685" height="510">
+        </picture>
+        <div class="hero__content">
+          <h1 class="hero__title"><span class="hero__title-strong">Super</span><span class="hero__title-light">Sale</span></h1>
+          <p class="hero__subtitle">
+            <span class="only-desktop">Itens selecionados com até</span>
+            <span class="only-mobile">Selected items up to</span>
+          </p>
+          <p class="hero__discount">50%OFF</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase" aria-labelledby="showcase-1-title">
+      <div class="showcase__container">
+        <div class="showcase__header">
+          <h2 class="showcase__title" id="showcase-1-title">Lançamentos</h2>
+          <a href="#" class="showcase__more">Ver mais</a>
+        </div>
+        <div class="showcase__slider">
+          <button type="button" class="showcase__arrow showcase__arrow--prev" aria-label="Produtos anteriores">
+            <img src="assets/icons/arrow-prev.svg" alt="" width="38" height="38">
+          </button>
+          <div class="swiper showcase__swiper" data-showcase>
+            <div class="swiper-wrapper" data-products></div>
+          </div>
+          <button type="button" class="showcase__arrow showcase__arrow--next" aria-label="Próximos produtos">
+            <img src="assets/icons/arrow-next.svg" alt="" width="38" height="38">
+          </button>
+        </div>
+        <div class="showcase__pagination" data-pagination></div>
+      </div>
+    </section>
+
+    <section class="feature">
+      <div class="feature__container">
+        <div class="feature__media">
+          <picture>
+            <source media="(max-width: 1023px)" srcset="assets/img/caneca-mobile.jpg">
+            <img src="assets/img/caneca.png" alt="Caneca preta Avanti" width="588" height="592" loading="lazy">
+          </picture>
+        </div>
+        <div class="feature__text">
+          <h2 class="feature__title">Lorem Ipsum</h2>
+          <div class="only-desktop">
+            <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.</p>
+            <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.</p>
+          </div>
+          <div class="only-mobile">
+            <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+            <p>Cras dignissim est et pellentesque tincidunt. Praesent bibendum quis velit a aliquam. Ut vestibulum turpis eget mi iaculis ullamcorper. Curabitur nec metus sed tortor sollicitudin porta nec eu enim. Ut fermentum scelerisque tortor mollis volutpat. Mauris iaculis magna nisl, vel porttitor augue placerat et.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlights">
+      <div class="highlights__container">
+        <div class="highlights__text">
+          <h2 class="highlights__title">Lorem ipsum</h2>
+          <ul class="highlights__list">
+            <li class="highlights__item">
+              <span class="highlights__icon"><img src="assets/icons/map-pin.svg" alt="" width="45" height="45"></span>
+              <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+            </li>
+            <li class="highlights__item">
+              <span class="highlights__icon"><img src="assets/icons/map-pin.svg" alt="" width="45" height="45"></span>
+              <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+            </li>
+            <li class="highlights__item">
+              <span class="highlights__icon"><img src="assets/icons/map-pin.svg" alt="" width="45" height="45"></span>
+              <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="highlights__media">
+          <picture>
+            <source media="(max-width: 1023px)" srcset="assets/img/caneca-cena.png">
+            <img src="assets/img/caneca-cena-desktop.jpg" alt="Caneca Avanti sobre tábua de madeira" width="652" height="728" loading="lazy">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature feature--secondary">
+      <div class="feature__container">
+        <div class="feature__media">
+          <picture>
+            <source media="(max-width: 1023px)" srcset="assets/img/caneca-mobile.jpg">
+            <img src="assets/img/caneca.png" alt="Caneca preta Avanti" width="588" height="592" loading="lazy">
+          </picture>
+        </div>
+        <div class="feature__text">
+          <h2 class="feature__title">Lorem Ipsum</h2>
+          <div class="only-desktop">
+            <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.</p>
+            <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue.</p>
+          </div>
+          <div class="only-mobile">
+            <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+            <p>Cras dignissim est et pellentesque tincidunt. Praesent bibendum quis velit a aliquam. Ut vestibulum turpis eget mi iaculis ullamcorper. Curabitur nec metus sed tortor sollicitudin porta nec eu enim. Ut fermentum scelerisque tortor mollis volutpat. Mauris iaculis magna nisl, vel porttitor augue placerat et.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase showcase--secondary" aria-labelledby="showcase-2-title">
+      <div class="showcase__container">
+        <div class="showcase__header">
+          <h2 class="showcase__title" id="showcase-2-title">Lançamentos</h2>
+          <a href="#" class="showcase__more">Ver mais</a>
+        </div>
+        <div class="showcase__slider">
+          <button type="button" class="showcase__arrow showcase__arrow--prev" aria-label="Produtos anteriores">
+            <img src="assets/icons/arrow-prev.svg" alt="" width="38" height="38">
+          </button>
+          <div class="swiper showcase__swiper" data-showcase>
+            <div class="swiper-wrapper" data-products></div>
+          </div>
+          <button type="button" class="showcase__arrow showcase__arrow--next" aria-label="Próximos produtos">
+            <img src="assets/icons/arrow-next.svg" alt="" width="38" height="38">
+          </button>
+        </div>
+        <div class="showcase__pagination" data-pagination></div>
+      </div>
+    </section>
+
+    <section class="contact" aria-label="Contato">
+      <img class="contact__bg" src="assets/img/banner-contato.png" alt="" loading="lazy">
+      <a href="#" class="contact__strip">
+        <p>Entre em contato conosco e verifique a disponibilidade para sua região!</p>
+      </a>
+    </section>
+
+    <section class="newsletter" aria-labelledby="newsletter-title">
+      <div class="newsletter__container">
+        <h2 class="newsletter__title" id="newsletter-title">Cadastre-se na nossa <span>newsletter</span></h2>
+        <form class="newsletter__form" data-newsletter-form>
+          <label class="visually-hidden" for="newsletter-name">Nome</label>
+          <input class="newsletter__input" type="text" id="newsletter-name" name="name" placeholder="Digite seu nome" required>
+          <label class="visually-hidden" for="newsletter-email">E-mail</label>
+          <input class="newsletter__input" type="email" id="newsletter-email" name="email" placeholder="Digite seu e-mail" required>
+          <label class="newsletter__check">
+            <input type="checkbox" name="privacy" required>
+            <span class="newsletter__checkbox" aria-hidden="true"></span>
+            <span>Estou de acordo com a <a href="#">Política de Privacidade</a></span>
+          </label>
+          <button class="newsletter__button" type="submit">Cadastrar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__container">
+        <div class="footer__columns">
+          <div class="footer__brand">
+            <img class="footer__logo" src="assets/icons/logo-footer.svg" alt="Avanti" width="152" height="27" loading="lazy">
+            <p class="footer__social-title">Siga nossas redes sociais</p>
+            <ul class="footer__social">
+              <li><a href="#" aria-label="Instagram"><img src="assets/icons/instagram.svg" alt="" width="19" height="19"></a></li>
+              <li><a href="#" aria-label="Facebook"><img src="assets/icons/facebook.svg" alt="" width="10" height="22"></a></li>
+              <li><a href="#" aria-label="YouTube"><img src="assets/icons/youtube.svg" alt="" width="26" height="26"></a></li>
+              <li><a href="#" aria-label="TikTok"><img src="assets/icons/tiktok.svg" alt="" width="18" height="21"></a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col" data-accordion>
+            <h4 class="footer__col-title">
+              <button type="button" class="footer__toggle" aria-expanded="false">
+                Institucional
+                <img src="assets/icons/chevron-down.svg" alt="" width="12" height="8">
+              </button>
+            </h4>
+            <ul class="footer__links">
+              <li><h5><a href="#">Sobre Nós</a></h5></li>
+              <li><h5><a href="#">Nossas Lojas</a></h5></li>
+              <li><h5><a href="#">Privacidade e Segurança</a></h5></li>
+              <li><h5><a href="#">Termos e Condições</a></h5></li>
+            </ul>
+          </div>
+
+          <div class="footer__col" data-accordion>
+            <h4 class="footer__col-title">
+              <button type="button" class="footer__toggle" aria-expanded="false">
+                Central de ajuda
+                <img src="assets/icons/chevron-down.svg" alt="" width="12" height="8">
+              </button>
+            </h4>
+            <ul class="footer__links">
+              <li><h5><a href="#">Fale Conosco</a></h5></li>
+              <li><h5><a href="#">Frete e Entrega</a></h5></li>
+              <li><h5><a href="#">Trocas e Devoluções</a></h5></li>
+              <li><h5><a href="#">Formas de Pagamento</a></h5></li>
+              <li><h5><a href="#">FAQ</a></h5></li>
+            </ul>
+          </div>
+
+          <div class="footer__col" data-accordion>
+            <h4 class="footer__col-title">
+              <button type="button" class="footer__toggle" aria-expanded="false">
+                Atendimento
+                <img src="assets/icons/chevron-down.svg" alt="" width="12" height="8">
+              </button>
+            </h4>
+            <ul class="footer__links footer__links--contact">
+              <li><h5><strong>Telefone:</strong> (00) 1234-5678</h5></li>
+              <li><h5><strong>E-mail:</strong> exemplo@exemplo.com.br</h5></li>
+              <li class="footer__hours">
+                <h5><strong>Horário de atendimento:</strong></h5>
+                <p>Segunda a Sábado: 07h00 às 23h00</p>
+                <p>Domingos e Feriados:&nbsp; 07h00 às 21h00</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <ul class="footer__payments" aria-label="Formas de pagamento">
+          <li><img src="assets/icons/pay-amex.svg" alt="American Express" width="27" height="18" loading="lazy"></li>
+          <li><img src="assets/icons/pay-mastercard.svg" alt="Mastercard" width="26" height="16" loading="lazy"></li>
+          <li><img src="assets/icons/pay-visa.svg" alt="Visa" width="33" height="10" loading="lazy"></li>
+          <li><img src="assets/icons/pay-hipercard.svg" alt="Hipercard" width="35" height="15" loading="lazy"></li>
+          <li><img src="assets/icons/pay-elo.svg" alt="Elo" width="32" height="12" loading="lazy"></li>
+          <li class="footer__payments-break" aria-hidden="true"></li>
+          <li><img src="assets/icons/pay-diners.svg" alt="Diners Club" width="30" height="18" loading="lazy"></li>
+          <li><img src="assets/icons/pay-paypal.svg" alt="PayPal" width="33" height="8" loading="lazy"></li>
+          <li><img src="assets/icons/pay-pix.svg" alt="Pix" width="23" height="23" loading="lazy"></li>
+          <li><img src="assets/icons/pay-boleto.svg" alt="Boleto" width="36" height="24" loading="lazy"></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__container">
+        <p class="footer__legal only-desktop">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
+        <p class="footer__legal only-mobile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.</p>
+        <ul class="footer__seals">
+          <li><img src="assets/icons/seal-letsencrypt.svg" alt="Let's Encrypt" width="39" height="30" loading="lazy"></li>
+          <li><img src="assets/img/vtex-pci.png" alt="VTEX PCI Certified" width="51" height="32" loading="lazy"></li>
+          <li class="footer__seals-divider" aria-hidden="true"></li>
+          <li><img src="assets/icons/seal-avanti.svg" alt="Avanti" width="57" height="10" loading="lazy"></li>
+          <li><img src="assets/icons/seal-vtex.svg" alt="VTEX" width="53" height="19" loading="lazy"></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <template id="product-card-template">
+    <div class="swiper-slide">
+      <article class="product-card">
+        <span class="product-card__tag">Novo</span>
+        <img class="product-card__image" src="assets/img/produto.png" alt="Camiseta branca básica" width="222" height="222" loading="lazy">
+        <h3 class="product-card__name">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h3>
+        <div class="product-card__prices">
+          <div class="product-card__price-group">
+            <span class="product-card__old-price">R$ 100,00</span>
+            <span class="product-card__price">R$79,90</span>
+          </div>
+          <span class="product-card__discount">10% off</span>
+        </div>
+        <p class="product-card__installments">Ou em até <strong>10x de R$ 7,90</strong></p>
+        <a href="#" class="product-card__button">Comprar</a>
+      </article>
+    </div>
+  </template>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
